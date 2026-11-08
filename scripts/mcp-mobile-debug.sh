@@ -84,6 +84,12 @@ export JAVA_HOME="${JAVA_HOME:-/usr/lib/jvm/java-17-openjdk-arm64}"
 export ANDROID_HOME="${ANDROID_HOME:-/opt/android-sdk}"
 export ANDROID_SDK_ROOT="$ANDROID_HOME"
 export GRADLE_HOME="${GRADLE_HOME:-/opt/gradle-8.7}"
+# mobile-debug's checkGradle() resolves the JDK via GRADLE_JAVA_HOME (a JDK
+# path) and only falls back to GRADLE_HOME if that var is unset. GRADLE_HOME
+# points at the Gradle distribution, which has no bin/java, so it would make
+# the server report gradleValid:false. Set BOTH correctly.
+export GRADLE_JAVA_HOME="$JAVA_HOME"
+export GRADLE_USER_HOME="${GRADLE_USER_HOME:-/root/.gradle}"
 export ADB_PATH=/usr/bin/adb
 export PATH="/opt/gradle-8.7/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/34.0.0:/opt/mobile-shims:$PATH"
 
