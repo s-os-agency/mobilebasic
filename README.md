@@ -1,5 +1,7 @@
 # mobilebasic
 
+> mobilebasic - mobile app project setup, configuration and orchestration. Android/iOS toolchain bootstrap, device runtime, and agent pipeline.
+
 Android scaffold + reproducible toolchain bootstrap for the **mobilebasic** project.
 
 > The project spec lives in a private Google Doc titled `mobilebasic`
