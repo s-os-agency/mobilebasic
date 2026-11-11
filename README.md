@@ -5,9 +5,12 @@
 
 Android scaffold + reproducible toolchain bootstrap for the **mobilebasic** project.
 
-> The project spec lives in a private Google Doc titled `mobilebasic`
-> (`1hDsK-yPLVLSPiolR7LAaA25MMyxI6-6fb2YdBFx8hjQ`). Access is pending -
-> see `docs/RUNBOOK.md` section 5.
+> The previously cited private Google Doc
+> (`1hDsK-yPLVLSPiolR7LAaA25MMyxI6-6fb2YdBFx8hjQ`) was accessible on 11 November 2026,
+> but its current content does not match this mobile scaffold. Do not treat it as
+> the confirmed project specification. Continue scaffold and toolchain work from
+> the checked-in source and `docs/RUNBOOK.md`; use a matching specification for
+> product-specific requirements.
 
 ## Quick start
 
